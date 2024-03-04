@@ -1,4 +1,4 @@
-//iterez de la 0
+//iterez de la 1
 smen[a][b] += val;
 smen[a][d + 1] -= val;
 smen[c + 1][b] -= val;
