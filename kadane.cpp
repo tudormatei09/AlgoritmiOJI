@@ -1,18 +1,17 @@
-inline static void kadane(std::vector<int> v, int &st, int &dr){
-            int max_initial = INT_MIN;
-            int max_sum =  0;
-            int s = 0;
-            for(int i = 0; i < v.size(); i++){
-                 max_sum = max_sum + v[i];
-                 if(max_initial < max_sum){
-                      max_initial = max_sum;
-                    st = s;
-                    dr = i;
-                 }
-                 if(max_sum < 0){
-                     max_sum = 0;
-                     s = i + 1;
-                 }
-            }
-
+inline static void maximSubsecventa(std::vector<int> v, int &inceput, int &sfarsit){
+    int maxim_initial = INT_MIN;
+    int suma_maxima =  0;
+    int start = 0;
+    for(int i = 0; i < v.size(); i++){
+         suma_maxima = suma_maxima + v[i];
+         if(maxim_initial < suma_maxima){
+              maxim_initial = suma_maxima;
+              inceput = start;
+              sfarsit = i;
+         }
+         if(suma_maxima < 0){
+             suma_maxima = 0;
+             start = i + 1;
+         }
+    }
 }
