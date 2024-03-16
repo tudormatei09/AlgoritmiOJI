@@ -25,3 +25,30 @@ signed main(){
         bkt(1,1);
     return 0;
 }
+
+
+
+///// sau asa
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void printSubsets(vector<int>& nums) {
+    int n = nums.size();
+    for (int i = 0; i < (1 << n); ++i) {
+        cout << "{ ";
+        for (int j = 0; j < n; ++j) {
+            if (i & (1 << j)) {
+                cout << nums[j] << " ";
+            }
+        }
+        cout << "}\n";
+    }
+}
+
+int main() {
+    vector<int> nums = {1, 2, 3};
+    printSubsets(nums);
+    return 0;
+}
