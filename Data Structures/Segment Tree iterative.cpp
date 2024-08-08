@@ -1,3 +1,6 @@
+// IMPLEMENTARE AINT PENTRU MINIME
+// poate invat si eu cum se implementeaza un aint cu lazy 
+
 #include "bits/stdc++.h"
 #define ull unsigned long long int
 const int DIM = 100000;
